@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Save URLs</title>
+        <meta charset="utf-8">
+        <link rel = "stylesheet" href = "style.css" />
+    </head>
+    <body>
+        <script defer src = "content.js"></script>
+        <h1>Bookmarks</h1>
+        <div id = "textInputDiv">
+            <div id = "up" class = "top">
+                <button onclick="showInput()">save url</button>
+            </div>
+            <!--  -->
+            <div id = "down" class = "bottom hidden">
+                <input type="text" id = "userInput" onfocus="this.value=''">
+                <button id = "savebtn" onclick = "btnClick()"> save </button>
+            </div>
+        </div>
+        
+        <p id = "savedURL">Saved URL's will appear here:</p>
+        <div id="listDiv">
+            <ul id = ulist></ul>
+        </div> 
+    </body>
+</html>
